@@ -1,3 +1,6 @@
+//economy 
+var money = 5;
+
 //seeds
 //common seeds
 var fernSeeds = 0;
@@ -41,5 +44,15 @@ var volcanicPoppyCost = 2500;
 var ghostOrchidCost = 3000;
 
 //images
+function preload() {
+    //seed packet image
+    seedimg = loadImage('seed.png');
+
+}
 //for seeds draw a seed packet and call it a day 
 //for the grown plant, draw what you think it would look like but your own twist  :3
+
+//canvas size as screen 
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+}
