@@ -42,4 +42,4 @@ var ghostOrchidCost = 3000;
 
 //images
 //for seeds draw a seed packet and call it a day 
-//for the grown plant, draw what you think it would look like but as a furry  :3
+//for the grown plant, draw what you think it would look like but your own twist  :3
