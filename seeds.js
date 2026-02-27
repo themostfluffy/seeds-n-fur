@@ -1,4 +1,4 @@
-//economy 
+//economy
 var money = 5;
 
 //seeds
@@ -22,7 +22,7 @@ var corpseFlowerSeeds = 0;
 var ashtulipeSeeds = 0;
 var volcanicPoppySeeds = 0;
 var ghostOrchidSeeds = 0;
-//costs 
+//costs
 //common seeds
 var fernCost = 5;
 var daisyCost = 10;
@@ -43,16 +43,43 @@ var ashtulipeCost = 2000;
 var volcanicPoppyCost = 2500;
 var ghostOrchidCost = 3000;
 
-//images
+//images 
 function preload() {
-    //seed packet image
-    seedimg = loadImage('seed.png');
-
+  // seed packet image – path is relative to index.html
+  // the actual file in the repo is called "seeds.png", so match that name
+  seedimg = loadImage("seeds.png");
 }
-//for seeds draw a seed packet and call it a day 
-//for the grown plant, draw what you think it would look like but your own twist  :3
 
-//canvas size as screen 
+// for seeds draw a seed packet and call it a day
+// for the grown plant, draw what you think it would look like but your own twist  :3
+
+// canvas size as screen
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+  // use the full window so the canvas scales with the browser
+  createCanvas(windowWidth, windowHeight);
+}
+// loop code
+function draw() {
+  background(0);
+  // display image if it has finished loading
+    //common seeds
+    image(seedimg, 0, 500, 100, 100);
+    image(seedimg, 100, 500, 100, 100);
+    image(seedimg, 200, 500, 100, 100);
+    image(seedimg, 300, 500, 100, 100);
+    image(seedimg, 400, 500, 100, 100);
+    image(seedimg, 500, 500, 100, 100);
+    //rare seeds
+    image(seedimg, 0, 600, 100, 100);
+    image(seedimg, 100, 600, 100, 100);
+    image(seedimg, 200, 600, 100, 100);
+    image(seedimg, 300, 600, 100, 100);
+    image(seedimg, 400, 600, 100, 100);
+    //legendary seeds
+    image(seedimg, 0,700 ,100 ,100);
+    image(seedimg ,100 ,700 ,100 ,100);
+    image(seedimg ,200 ,700 ,100 ,100);
+    image(seedimg ,300 ,700 ,100 ,100);
+    image(seedimg ,400 ,700 ,100 ,100);
+  
 }
